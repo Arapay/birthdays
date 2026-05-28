@@ -11,7 +11,7 @@ today_month = today.strftime('%m')
 today_day = today.strftime('%d')
 
 # 2. 从环境变量中读取邮箱配置 (保护隐私)
-SMTP_SERVER = "smtp.qq.com"  # 如果用163邮箱改回 smtp.163.com
+SMTP_SERVER = "smtp.163.com"  # 如果用163邮箱改回 smtp.163.com
 SMTP_PORT = 465
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL')      # 发件人邮箱
 AUTH_CODE = os.environ.get('AUTH_CODE')            # 刚刚拿到的16位授权码
