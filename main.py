@@ -40,7 +40,7 @@ def send_email(birthday_people):
 # 3. 读取 CSV 文件并比对
 birthday_people = []
 if os.path.exists('birthdays.csv'):
-    with open('birthdays.csv', mode='r', encoding='utf-8') as f:
+    with open('birthdays.csv', mode='r', encoding='gbk') as f:
         reader = csv.DictReader(f)
         for row in reader:
             # 去除前后空格并比对
